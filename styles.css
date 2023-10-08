@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 1; /* Initial opacity set to 1 */
+    visibility: visible; /* Initial visibility set to visible */
+}
+
+.completed {
+    background-color: #27ae60;
+    animation: fadeOut 0.5s ease-in-out forwards; /* Animation for completed tasks */
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.task-0 {
+    background-color: #3498db;
+}
+
+.task-1 {
+    background-color: #e74c3c;
+}
+
+.task-2 {
+    background-color: #f39c12;
+}
+
+.task-3 {
+    background-color: #9b59b6;
+}
