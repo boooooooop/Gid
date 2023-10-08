@@ -26,13 +26,13 @@ body {
     font-size: 24px;
     cursor: pointer;
     transition: background-color 0.3s;
-    opacity: 1; /* Initial opacity set to 1 */
-    visibility: visible; /* Initial visibility set to visible */
+    opacity: 1;
+    visibility: visible;
 }
 
 .completed {
     background-color: #27ae60;
-    animation: fadeOut 0.5s ease-in-out forwards; /* Animation for completed tasks */
+    animation: fadeOut 0.5s ease-in-out forwards;
 }
 
 @keyframes fadeOut {
@@ -40,20 +40,4 @@ body {
         opacity: 0;
         visibility: hidden;
     }
-}
-
-.task-0 {
-    background-color: #3498db;
-}
-
-.task-1 {
-    background-color: #e74c3c;
-}
-
-.task-2 {
-    background-color: #f39c12;
-}
-
-.task-3 {
-    background-color: #9b59b6;
 }
